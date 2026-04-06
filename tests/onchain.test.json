@@ -1,0 +1,47 @@
+{
+  "source": "../src/main.v",
+  "tests": {
+    "total_weeks_default_smoke": {
+      "function": "total_weeks_default",
+      "parameters": [],
+      "expected": {
+        "success": true
+      }
+    },
+    "week1_reward_atoms_default_smoke": {
+      "function": "week1_reward_atoms_default",
+      "parameters": [],
+      "expected": {
+        "success": true
+      }
+    },
+    "weekly_decay_bps_default_smoke": {
+      "function": "weekly_decay_bps_default",
+      "parameters": [],
+      "expected": {
+        "success": true
+      }
+    },
+    "token_decimals_default_smoke": {
+      "function": "token_decimals_default",
+      "parameters": [],
+      "expected": {
+        "success": true
+      }
+    },
+    "decay_multiplier_bps_smoke": {
+      "function": "decay_multiplier_bps",
+      "parameters": [700],
+      "expected": {
+        "success": true
+      }
+    },
+    "reward_for_week_smoke": {
+      "function": "reward_for_week",
+      "parameters": [1000000000, 700, 2],
+      "expected": {
+        "success": true
+      }
+    }
+  }
+}

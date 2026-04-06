@@ -8,10 +8,54 @@
     }
   },
   "tests": {
-    "test_add": {
+    "test_week0_reward": {
       "parameters": [
-        10,
-        20
+        1000000000
+      ],
+      "expected": {
+        "success": true
+      }
+    },
+    "test_week1_reward": {
+      "parameters": [
+        1000000000
+      ],
+      "expected": {
+        "success": true
+      }
+    },
+    "test_week2_reward": {
+      "parameters": [
+        1000000000
+      ],
+      "expected": {
+        "success": true
+      }
+    },
+    "test_rollover_burns_unclaimed": {
+      "parameters": [
+        930000000,
+        3,
+        4
+      ],
+      "expected": {
+        "success": true
+      }
+    },
+    "test_same_week_keeps_unclaimed": {
+      "parameters": [
+        930000000,
+        4,
+        4
+      ],
+      "expected": {
+        "success": true
+      }
+    },
+    "test_campaign_end_no_mint": {
+      "parameters": [
+        26,
+        26
       ],
       "expected": {
         "success": true
